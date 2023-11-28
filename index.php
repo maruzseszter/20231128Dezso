@@ -26,10 +26,35 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         echo "PHP OOP összefoglaló: ";
         //include 'VeletlenDolgok.php';
         require 'VeletlenDolgok.php';
-        echo VeletlenDolgok::VeletlenNev();
-        echo VeletlenDolgok::VeletlenKor();
-        echo VeletlenDolgok::VeletlenNyelv();
+        //echo VeletlenDolgok::VeletlenNev();
+        //echo VeletlenDolgok::VeletlenKor();
+        //echo VeletlenDolgok::VeletlenNyelv();
         $szemelyek=[];
+        require 'Szemely.php';
+        for($db=1;$db<=10;$db++) {
+            $szemelyek[]=new Szemely (
+              VeletlenDolgok::VeletlenNev(),
+              VeletlenDolgok::VeletlenKor(),
+              VeletlenDolgok::VeletlenNyelv()
+        );
+        }
+        //var_dump($szemelyek);
        ?>
+        <table>
+            <tr>
+            <thead>
+            <th>Név</th>
+            <th>Kor</th>
+            <th>Nyelv</th>
+            </tr>
+            </thead>
+            <tbody>
+                <?php
+                       foreach ($szemelyek as $sz){
+                           echo $sz;
+                       }
+                       ?>
+            </tbody>
+        </table>
     </body>
 </html>

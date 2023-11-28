@@ -32,9 +32,25 @@ form {
     border-radius: 5px;
     box-shadow: 5px 5px 5px #888;
     width: 40%;
-    margin: 0 auto; /* Módosítás itt: margin-left és margin-right helyett csak margin-t használunk, és az auto érték középre igazítja a formot */
+    margin: 0 auto; 
 }
 
 /*div#gomb {
     margin-left: auto;
 }*/
+
+table {
+    border: 1 px solid blue;
+    width: 60%;
+   margin-left: auto;
+   /*margin: 0;*/
+    border-collapse: collapse;
+}
+
+tr:nth_child(2n),thead>tr{
+    background-color: #aaa;
+}
+
+th,td{
+    border: 1px solid green;
+}
