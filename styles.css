@@ -1,0 +1,40 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2023. nov. 28., 17:57:30
+    Author     : diak
+*/
+*{
+    box-sizing: border-box;
+}
+input {
+    margin-bottom: 1rem;
+    display: block;
+    width: 100%
+}
+button {
+    width: 100%;
+    cursor: pointer
+}
+label {
+    font-weight: bold;
+}
+hr {
+    height:5px;
+    background-color: #777;
+    margin: 1rem 0;
+}
+form {
+    padding: 1rem;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888;
+    width: 40%;
+    margin: 0 auto; /* Módosítás itt: margin-left és margin-right helyett csak margin-t használunk, és az auto érték középre igazítja a formot */
+}
+
+/*div#gomb {
+    margin-left: auto;
+}*/
